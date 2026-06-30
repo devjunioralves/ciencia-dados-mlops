@@ -1,0 +1,15 @@
+run_id,model,selected,val_accuracy,val_f1_macro,val_precision_macro,val_recall_macro
+20260630T002533Z,logistic_regression,True,1.0,1.0,1.0,1.0
+20260630T002533Z,random_forest,False,1.0,1.0,1.0,1.0
+20260630T002751Z,logistic_regression,True,1.0,1.0,1.0,1.0
+20260630T002751Z,random_forest,False,1.0,1.0,1.0,1.0
+20260630T002751Z,keras_mlp,False,0.9722222222222222,0.9740129935032484,0.977777777777778,0.9722222222222222
+20260630T002825Z,logistic_regression,True,1.0,1.0,1.0,1.0
+20260630T002825Z,random_forest,False,1.0,1.0,1.0,1.0
+20260630T002825Z,keras_mlp,False,1.0,1.0,1.0,1.0
+20260630T002952Z,logistic_regression,True,1.0,1.0,1.0,1.0
+20260630T002952Z,random_forest,False,1.0,1.0,1.0,1.0
+20260630T002952Z,keras_mlp,False,0.9722222222222222,0.9740129935032484,0.977777777777778,0.9722222222222222
+20260630T003026Z,logistic_regression,True,1.0,1.0,1.0,1.0
+20260630T003026Z,random_forest,False,1.0,1.0,1.0,1.0
+20260630T003026Z,keras_mlp,False,1.0,1.0,1.0,1.0

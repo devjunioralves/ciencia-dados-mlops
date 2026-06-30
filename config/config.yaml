@@ -1,0 +1,40 @@
+# =============================================================
+# Configuração geral do pipeline de MLOps
+# Tudo que controla o fluxo vive aqui (sem hard-code no código).
+# =============================================================
+
+project:
+  name: "wine-classifier-mlops"
+  version: "1.0.0"
+
+data:
+  # Dataset clássico embutido no scikit-learn (multiclasse, 13 features).
+  source: "sklearn_wine"
+  raw_path: "data/wine_raw.csv"
+  target_column: "target"
+  test_size: 0.2
+  val_size: 0.2
+  random_state: 42
+
+preprocessing:
+  scaler: "standard"        # standard | minmax | none
+  drop_duplicates: true
+  drop_na: true
+
+eda:
+  reports_dir: "reports"
+  correlation_threshold: 0.85   # alerta de multicolinearidade
+
+training:
+  # Métrica usada para escolher AUTOMATICAMENTE o melhor modelo.
+  selection_metric: "f1_macro"  # accuracy | f1_macro | precision_macro | recall_macro
+  cv_folds: 5
+  models_dir: "models"
+  best_model_name: "best_model"
+  metadata_file: "models/metadata.json"
+  metrics_history: "models/metrics_history.csv"
+
+serving:
+  host: "0.0.0.0"
+  port: 8000
+  api_url: "http://localhost:8000"

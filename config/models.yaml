@@ -1,0 +1,32 @@
+# =============================================================
+# Definição dos 3 modelos candidatos.
+# O treino percorre esta lista, avalia cada um e escolhe o melhor
+# segundo a métrica definida em config.yaml -> training.selection_metric.
+# =============================================================
+
+models:
+
+  - name: "logistic_regression"
+    framework: "sklearn"
+    estimator: "LogisticRegression"
+    params:
+      C: 1.0
+      max_iter: 1000
+
+  - name: "random_forest"
+    framework: "sklearn"
+    estimator: "RandomForestClassifier"
+    params:
+      n_estimators: 200
+      max_depth: 8
+      random_state: 42
+
+  - name: "keras_mlp"
+    framework: "tensorflow"
+    params:
+      hidden_units: [64, 32]
+      dropout: 0.2
+      epochs: 80
+      batch_size: 16
+      learning_rate: 0.001
+      patience: 10           # early stopping

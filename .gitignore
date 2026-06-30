@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Dados brutos regeneráveis (mantemos só os artefatos versionados do modelo)
+data/*.csv
+
+# OS
+.DS_Store
+
+# Mantemos versionados (NÃO ignorar):
+#   models/  -> melhor modelo + metadata + histórico (MLOps)
+#   reports/ -> saídas da EDA
+!models/
+!reports/
