@@ -1,5 +1,5 @@
 {
-  "run_id": "20260928T030516Z",
+  "run_id": "20261005T030746Z",
   "model_name": "logistic_regression",
   "framework": "sklearn",
   "selection_metric": "f1_macro",
@@ -36,6 +36,6 @@
     2
   ],
   "n_features": 13,
-  "trained_at": "2026-09-28T03:05:19.847611+00:00",
+  "trained_at": "2026-10-05T03:07:51.411679+00:00",
   "artifact": "best_model.joblib"
 }
