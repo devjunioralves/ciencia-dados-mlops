@@ -46,3 +46,6 @@ run_id,model,selected,val_accuracy,val_f1_macro,val_precision_macro,val_recall_m
 20261012T031302Z,logistic_regression,True,1.0,1.0,1.0,1.0
 20261012T031302Z,random_forest,False,1.0,1.0,1.0,1.0
 20261012T031302Z,keras_mlp,False,1.0,1.0,1.0,1.0
+20261019T030222Z,logistic_regression,True,1.0,1.0,1.0,1.0
+20261019T030222Z,random_forest,False,1.0,1.0,1.0,1.0
+20261019T030222Z,keras_mlp,False,1.0,1.0,1.0,1.0
